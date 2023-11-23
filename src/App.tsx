@@ -164,12 +164,13 @@ function App() {
 
     return (
       <>
+        <h2>{activeUsername} Rating History</h2>
         {userRatingHistory.map((h) => {
           const points = h.points.slice(historyMaxDays * -1).reverse();
 
           return (
             <Fragment key={h.name}>
-              <h2>GAME TYPE - {h.name}</h2>
+              <h3>GAME TYPE - {h.name}</h3>
               <div className="table-row table-header">
                 <div>Rating</div>
                 <div>Date</div>
