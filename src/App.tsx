@@ -64,6 +64,7 @@ function App() {
       fetch(`${API_BASE}user/${activeUsername}/rating-history`).then(
         (res) => res.json() as Promise<UserRatingHistoryResponse>
       ),
+    enabled: !!activeUsername,
   });
 
   const renderTopPlayers = () => {
