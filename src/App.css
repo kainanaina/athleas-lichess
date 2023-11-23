@@ -1,0 +1,58 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: block !important;
+}
+
+label {
+  margin-right: 20px;
+
+  > span {
+    margin-right: 8px;
+  }
+}
+
+.app {
+  width: 1200px;
+  max-width: 100%;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.table-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-size: 14px;
+
+  > div {
+    padding: 0 8px;
+    width: 15%;
+
+    &:first-child {
+      width: 55%;
+    }
+  }
+
+  &.clickable {
+    cursor: pointer;
+  }
+}
+
+.table-header {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.online {
+  color: #31da1a;
+}
+
+.offline {
+  color: red;
+}
